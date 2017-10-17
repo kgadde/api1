@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'rest_framework', # Add this line
     'api',
     'rest_framework.authtoken', # ADD THIS LINE
+    'core',
 ]
 
 MIDDLEWARE = [
@@ -57,7 +58,7 @@ ROOT_URLCONF = 'basic.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['/home/learner/projects/api1/basic/basic/templates',], # this had empty dictionary set the correct templates and then update this
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -135,3 +136,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+
+TEMPLATES_DIRS = ('/home/learner/projects/api1/basic/basic/templates',)
+
+EMBEDLY_KEY = '9e5904bfae044a75a87cfb5355f44f3b'
