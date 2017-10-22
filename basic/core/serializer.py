@@ -6,3 +6,4 @@ class EmbedSerializer(serializers.ModelSerializer):
         model = SavedEmbeds
         fields = '__all__'
 
+

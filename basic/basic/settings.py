@@ -137,6 +137,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-TEMPLATES_DIRS = ('/home/learner/projects/api1/basic/basic/templates',)
+#TEMPLATES_DIRS = ('/home/learner/projects/api1/basic/basic/templates',)
 
+TEMPLATE_DIRS = (
+    os.path.join(os.path.join(BASE_DIR, 'templates')),
+)
 EMBEDLY_KEY = '9e5904bfae044a75a87cfb5355f44f3b'
